@@ -1,0 +1,27 @@
+body{
+    font-family: sans-serif;
+    text-align:center;
+    margin-top:100px;
+    direction:rtl;
+    background-color:#fdf6e3;
+}
+h2{
+    color:#333;
+}
+.box{
+    display:none;
+    margin-top:20px;
+}
+button{
+    margin:10px;
+    padding:10px 20px;
+    font-size:16px;
+    background-color:#ffb6c1;
+    border:none;
+    border-radius:8px ;
+    cursor:pointer;
+    transition:background-color 0.3;
+}
+button:hover{
+    background-color:#ff69b4;
+}
