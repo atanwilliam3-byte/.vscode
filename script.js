@@ -1,15 +1,17 @@
-function createHeart() {
-    const heart = document.createElement("div");
-    heart.classList.add("heart");
-    heart.innerHTML = "❤";
-    heart.style.left = Math.random() * 100 + "vw";
-    heart.style.top = "100vh";
-    heart.style.fontSize = (Math.random() * 20 + 10) + "px";
-    document.body.appendChild(heart);
-
-    setTimeout(() => {
-        heart.remove();
-    }, 4000);
+function hideAllBoxes() {
+    document.getElementById("questionBox").style.display="none";
+  document.getElementById("yesBox").style.display="none";
+   document.getElementById("noBox").style.display="none";
 }
-
-setInterval(createHeart, 300);
+function answerYes() {
+    hideAllBoxes();
+   document.getElementById("yesBox").style.display="block";  
+}
+function answerNo() {
+    hideAllBoxes();
+ document.getElementById("noBox").style.display="block";
+}
+function goBack() {
+    hideAllBoxes();
+     document.getElementById("questionBox").style.display="block";
+}

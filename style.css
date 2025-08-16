@@ -1,44 +1,27 @@
-
-body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
-    font-family: Arial, sans-serif;
-    overflow: hidden;
+body{
+    font-family: sans-serif;
+    text-align:center;
+    margin-top:100px;
+    direction:rtl;
+    background-color:#fdf6e3;
 }
-
-h1 {
-    font-size: 4rem;
-    color: white;
-    text-shadow: 0 0 10px rgba(255,255,255,0.7);
-    opacity: 0;
-    transform: scale(0.5);
-    animation: fadeInZoom 2s ease forwards;
+h2{
+    color:#333;
 }
-
-@keyframes fadeInZoom {
-    0% {
-        opacity: 0;
-        transform: scale(0.5);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+.box{
+    display:none;
+    margin-top:20px;
 }
-
-/* افکت قلب‌های کوچک */
-.heart {
-    position: absolute;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 20px;
-    animation: floatUp 4s linear infinite;
+button{
+    margin:10px;
+    padding:10px 20px;
+    font-size:16px;
+    background-color:#ffb6c1;
+    border:none;
+    border-radius:8px ;
+    cursor:pointer;
+    transition:background-color 0.3;
 }
-
-@keyframes floatUp {
-    0% { transform: translateY(0) scale(1); opacity: 1; }
-    100% { transform: translateY(-300px) scale(1.5); opacity: 0; }
+button:hover{
+    background-color:#ff69b4;
 }
